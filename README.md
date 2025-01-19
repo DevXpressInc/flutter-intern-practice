@@ -16,8 +16,6 @@ This application is designed to help users efficiently manage their daily tasks 
 To get a local copy up and running, follow these simple steps.
 
 ## Prerequisites
-
-- Finish the [Roadmap](https://roadmap.sh/flutter)
 - Flutter (Latest Version)
 - Dart SDK
 - A Firebase account
@@ -82,68 +80,59 @@ git checkout -b feature/YourFeatureName
 
 ## Pages and Key Features
 
-### 1.  Splash Screen (Optional)
-- Display the application logo.
-- Transition to either the Home Screen or Authentication Screen, depending on the user's login status.
-
-### 2. Authentication Screen
-
+### 1. Authentication Screen
 - Features:
     - Email and password-based registration.
     - Email and password-based login.
     - Password reset option.
 - Firebase Integration: Use Firebase Authentication.
 
-### 3. Home/Dashboard Screen
+### 2. Home/Dashboard Screen
 - Features:
     - Display a list of tasks.
     - Options to view, edit, or delete existing tasks.
     - Button to add a new task.
 - Firebase Integration: Retrieve tasks from Firestore.
 
-### 4. Task Creation/Editing Screen
+### 3. Task Creation/Editing Screen
 - Features:
     - Form to enter/edit task details (title, description, due date, priority).
     - Option to set a reminder.
 - Firebase Integration: Add or update tasks in Firestore.
 
-### 5. Reminder Setup Screen
-
+### 4. Reminder Setup Screen
 - Features:
     - Select date and time for the reminder.
     - Option to repeat the reminder (e.g., daily, weekly).
 - Local Notifications: Implement local notifications for reminders.
 
-### 6. Profile Screen
+### 5. Profile Screen
 - Features:
     - Display user information.
     - Option to log out.
 - Firebase Integration: Manage user session.
 
-### 7. Settings Screen (Optional)
+### 6. Settings Screen (Optional)
 - Features:
     - Theme selection (light/dark mode).
     - Language selection.
     - Notification settings.
 
+### 7.  Splash Screen (Optional)
+- Display the application logo.
+- Transition to either the Home Screen or Authentication Screen, depending on the user's login status.
+
 ## Additional Requirements
 
 ### Data Management
-
 - Use Firestore to store and manage tasks and user data.
-- Implement real-time data synchronization. (No worries, it's in real time by default ;)
 
-### User Interface
-- Follow Material Design (for Android) or Cupertino Design (for iOS) principles. (Choose one)
-- Ensure responsive and intuitive UI/UX.
+### State Management
+- Use riverpods: https://riverpod.dev/
 
 ### Testing
 - Write unit tests for business logic.
 - Perform integration testing for Firebase services.
-
-### Documentation(BONUS)
-- Document the codebase.
-- Create a README file for GitHub repository.
 
 ### Version Control
 - Use Git for version control.
